@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>vue-cli | lrzeblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="vue" />
+  
+  
+  
+  
+  <meta name="description" content="webpack-vue  vue-cli官方脚手架安装安装官方脚手架(https://github.com/vuejs-templates/webpack) 12345678npm install -g vue-clivue init webpack my-projectcd my-projectnpm install 开发环境运行 1npm run dev 生产环境准备生成dist 1npm">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue-cli">
+<meta property="og:url" content="http://yoursite.com/2017/12/08/vue/index.html">
+<meta property="og:site_name" content="lrzeblog">
+<meta property="og:description" content="webpack-vue  vue-cli官方脚手架安装安装官方脚手架(https://github.com/vuejs-templates/webpack) 12345678npm install -g vue-clivue init webpack my-projectcd my-projectnpm install 开发环境运行 1npm run dev 生产环境准备生成dist 1npm">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/img/vue.png">
+<meta property="og:image" content="http://yoursite.com/img/vue2.png">
+<meta property="og:updated_time" content="2017-12-09T16:51:15.480Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue-cli">
+<meta name="twitter:description" content="webpack-vue  vue-cli官方脚手架安装安装官方脚手架(https://github.com/vuejs-templates/webpack) 12345678npm install -g vue-clivue init webpack my-projectcd my-projectnpm install 开发环境运行 1npm run dev 生产环境准备生成dist 1npm">
+<meta name="twitter:image" content="http://yoursite.com/img/vue.png">
+  
+    <link rel="alternate" href="/atom.xml" title="lrzeblog" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylog.jpeg">
+  <link rel="apple-touch-icon" href="/css/images/mylog.jpeg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylog.jpeg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-vue" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      vue-cli
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/12/08/vue/" class="article-date">
+	  <time datetime="2017-12-08T06:22:11.000Z" itemprop="datePublished">2017-12-08</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/vue-cli/">vue-cli</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>webpack-vue</p>
+</blockquote>
+<h1 id="vue-cli官方脚手架安装"><a href="#vue-cli官方脚手架安装" class="headerlink" title="vue-cli官方脚手架安装"></a>vue-cli官方脚手架安装</h1><p>安装官方脚手架(<a href="https://github.com/vuejs-templates/webpack" target="_blank" rel="external">https://github.com/vuejs-templates/webpack</a>)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm install -g vue-cli</span><br><span class="line"></span><br><span class="line">vue init webpack my-project</span><br><span class="line"></span><br><span class="line">cd my-project</span><br><span class="line"></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>开发环境运行</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+<p>生产环境准备生成dist</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<p>官方脚手架支持单元测试</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run unit</span><br></pre></td></tr></table></figure>
+<p>这个模板是Vue 2.0兼容。对于Vue 1.x，请使用以下命令：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack#1.0 my-project</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>官方脚手架中用到eslint，若不需要使用在项目初始化时执行到选择是否用eslint时输入N再回车<br>若项目已经初始化完毕需要关闭找到/build/webpack.base.conf.js 在其中注释掉eslint</p>
+</blockquote>
+<p><img src="/img/vue.png" alt="img"><br><img src="/img/vue2.png" alt="img"></p>
+<h1 id="Vue-cli-proxyTable-解决开发环境的跨域问题"><a href="#Vue-cli-proxyTable-解决开发环境的跨域问题" class="headerlink" title="Vue-cli proxyTable 解决开发环境的跨域问题"></a>Vue-cli proxyTable 解决开发环境的跨域问题</h1><p>在Vue-cli项目中webpack.dev.conf.js中devServer是这样的<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">devServer: &#123;</span><br><span class="line">    clientLogLevel: <span class="string">'warning'</span>,</span><br><span class="line">    historyApiFallback: <span class="literal">true</span>,</span><br><span class="line">    hot: <span class="literal">true</span>,</span><br><span class="line">    compress: <span class="literal">true</span>,</span><br><span class="line">    host: HOST || config.dev.host,</span><br><span class="line">    port: PORT || config.dev.port,</span><br><span class="line">    open: config.dev.autoOpenBrowser,</span><br><span class="line">    overlay: config.dev.errorOverlay</span><br><span class="line">      ? &#123; <span class="attr">warnings</span>: <span class="literal">false</span>, <span class="attr">errors</span>: <span class="literal">true</span> &#125;</span><br><span class="line">      : <span class="literal">false</span>,</span><br><span class="line">    publicPath: config.dev.assetsPublicPath,</span><br><span class="line">    proxy: config.dev.proxyTable,</span><br><span class="line">    quiet: <span class="literal">true</span>, <span class="comment">// necessary for FriendlyErrorsPlugin</span></span><br><span class="line">    watchOptions: &#123;</span><br><span class="line">      poll: config.dev.poll,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中proxy是设置代理的，这里的代理指向config/index.js中的proxyTable，所以说在Vue-cli官方脚手架项目中设置代理是在config/index.js中设置</p>
+<p>在config/index.js中的dev是这样的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">dev: &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Paths</span></span><br><span class="line">    assetsSubDirectory: <span class="string">'static'</span>,</span><br><span class="line">    assetsPublicPath: <span class="string">'/'</span>,</span><br><span class="line">    proxyTable: &#123;&#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Various Dev Server settings</span></span><br><span class="line">    host: <span class="string">'localhost'</span>, <span class="comment">// can be overwritten by process.env.HOST</span></span><br><span class="line">    port: <span class="number">8080</span>, <span class="comment">// can be overwritten by process.env.PORT, if port is in use, a free one will be determined</span></span><br><span class="line">    autoOpenBrowser: <span class="keyword">false</span>,</span><br><span class="line">    errorOverlay: <span class="keyword">true</span>,</span><br><span class="line">    notifyOnErrors: <span class="keyword">true</span>,</span><br><span class="line">    poll: <span class="keyword">false</span>, <span class="comment">// https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Use Eslint Loader?</span></span><br><span class="line">    <span class="comment">// If true, your code will be linted during bundling and</span></span><br><span class="line">    <span class="comment">// linting errors and warnings will be shown in the console.</span></span><br><span class="line">    useEslint: <span class="keyword">true</span>,</span><br><span class="line">    <span class="comment">// If true, eslint errors and warnings will also be shown in the error overlay</span></span><br><span class="line">    <span class="comment">// in the browser.</span></span><br><span class="line">    showEslintErrorsInOverlay: <span class="keyword">false</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Source Maps</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// https://webpack.js.org/configuration/devtool/#development</span></span><br><span class="line">    devtool: <span class="string">'eval-source-map'</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// If you have problems debugging vue-files in devtools,</span></span><br><span class="line">    <span class="comment">// set this to false - it *may* help</span></span><br><span class="line">    <span class="comment">// https://vue-loader.vuejs.org/en/options.html#cachebusting</span></span><br><span class="line">    cacheBusting: <span class="keyword">true</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// CSS Sourcemaps off by default because relative paths are "buggy"</span></span><br><span class="line">    <span class="comment">// with this option, according to the CSS-Loader README</span></span><br><span class="line">    <span class="comment">// (https://github.com/webpack/css-loader#sourcemaps)</span></span><br><span class="line">    <span class="comment">// In our experience, they generally work as expected,</span></span><br><span class="line">    <span class="comment">// just be aware of this issue when enabling this option.</span></span><br><span class="line">    cssSourceMap: <span class="keyword">false</span>,</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>因为webpack.dev.conf.js中的proxy指向config/index.js中的proxyTable<br>所以我们设置代理需要在proxyTable中设置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    </span><br><span class="line">proxyTable: &#123;</span><br><span class="line">    <span class="string">'/apis'</span>: &#123;  <span class="comment">//将www.exaple.com印射为/apis</span></span><br><span class="line">        target: <span class="string">'https://www.exaple.com'</span>, <span class="comment">// 接口域名</span></span><br><span class="line">        changeOrigin: <span class="literal">true</span>, <span class="comment">//是否跨域</span></span><br><span class="line">        pathRewrite: &#123;</span><br><span class="line">            <span class="string">'^/apis'</span>: <span class="string">''</span>  <span class="comment">//需要rewrite的,</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="vue-cli引入scss和less"><a href="#vue-cli引入scss和less" class="headerlink" title="vue-cli引入scss和less"></a>vue-cli引入scss和less</h1><p>vue-cli中已经内置配置好了sass 以及lass的配置。如果需要的话直接下载两个模块就可以了,webpack它会根据 lang 属性自动用适当的加载器去处理。</p>
+<h3 id="如果需要使用sass，则安装："><a href="#如果需要使用sass，则安装：" class="headerlink" title="如果需要使用sass，则安装："></a>如果需要使用sass，则安装：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install node-sass --save-dev  </span><br><span class="line">npm install sass-loader --save-dev</span><br></pre></td></tr></table></figure>
+<h3 id="sass的内联写法："><a href="#sass的内联写法：" class="headerlink" title="sass的内联写法："></a>sass的内联写法：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"sass"</span> <span class="attr">scoped</span>&gt;</span><span class="undefined">  </span></span><br><span class="line"><span class="undefined">    //sass样式  </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="sass的引用写法："><a href="#sass的引用写法：" class="headerlink" title="sass的引用写法："></a>sass的引用写法：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"sass"</span> <span class="attr">src</span>=<span class="string">"./index.sass"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="如果需要使用less，则安装："><a href="#如果需要使用less，则安装：" class="headerlink" title="如果需要使用less，则安装："></a>如果需要使用less，则安装：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install less --save-dev  </span><br><span class="line">npm install less-loader --save-dev</span><br></pre></td></tr></table></figure>
+<h3 id="less的内联写法："><a href="#less的内联写法：" class="headerlink" title="less的内联写法："></a>less的内联写法：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"less"</span> <span class="attr">scoped</span>&gt;</span><span class="undefined">  </span></span><br><span class="line"><span class="undefined">    //less样式  </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="less的引用写法："><a href="#less的引用写法：" class="headerlink" title="less的引用写法："></a>less的引用写法：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"less"</span> <span class="attr">src</span>=<span class="string">"./index.less"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://ng-work.github.io/img/Wechat.jpg',
+  alipayImage: 'https://ng-work.github.io/img/zhifubao1.png'
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/16/webpack-react-typescript/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">webpack-react-typescript配置</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue-cli官方脚手架安装"><span class="nav-number">1.</span> <span class="nav-text">vue-cli官方脚手架安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue-cli-proxyTable-解决开发环境的跨域问题"><span class="nav-number">2.</span> <span class="nav-text">Vue-cli proxyTable 解决开发环境的跨域问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vue-cli引入scss和less"><span class="nav-number">3.</span> <span class="nav-text">vue-cli引入scss和less</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如果需要使用sass，则安装："><span class="nav-number">3.0.1.</span> <span class="nav-text">如果需要使用sass，则安装：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sass的内联写法："><span class="nav-number">3.0.2.</span> <span class="nav-text">sass的内联写法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sass的引用写法："><span class="nav-number">3.0.3.</span> <span class="nav-text">sass的引用写法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果需要使用less，则安装："><span class="nav-number">3.0.4.</span> <span class="nav-text">如果需要使用less，则安装：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#less的内联写法："><span class="nav-number">3.0.5.</span> <span class="nav-text">less的内联写法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#less的引用写法："><span class="nav-number">3.0.6.</span> <span class="nav-text">less的引用写法：</span></a></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2017 lrzeblog All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				访客数 : <span id="busuanzi_value_site_uv"></span> |  
+				访问量 : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+    <a href="/categories" class="mobile-nav-link">分类</a>
+  
+    <a href="/tags" class="mobile-nav-link">标签</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            lrzeblog
+          </div>
+          <div class="panel-body">
+            Copyright © 2017 Mr. Lei All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
